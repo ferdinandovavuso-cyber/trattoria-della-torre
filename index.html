@@ -4,170 +4,192 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trattoria della Torre · Isola Sacra, Fiumicino</title>
-<meta name="description" content="Trattoria della Torre a Isola Sacra, Fiumicino. Cucina romana di casa: carbonara, amatriciana, grigliata, pinsa. Menu a 25 €. Prenota al 342 838 4188.">
+<meta name="description" content="Trattoria della Torre a Isola Sacra, Fiumicino. Sapori della tradizione romana: carbonara, amatriciana, grigliata, pinsa e la Scorpacciata Romana a 25 €. Prenota al 342 838 4188.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --red:#6A0D00;
-  --red2:#520A00;
-  --sand:#E6C9A2;
-  --cream:#F9F1E8;
-  --navy:#0E1927;
-  --grey:#666;
-  --dark:#333;
-  --line:#E6DCCD;
-  --head:'Marcellus', Georgia, serif;
-  --body:'Nunito Sans', Arial, sans-serif;
+  --gut:calc(max(0px,(100vw - 1180px) / 2) + 28px);
+  --red:#6A0D00;--red2:#520A00;--tomato:#B3261E;
+  --sand:#E6C9A2;--cream:#F9F1E8;--blush:#F3E2D3;--navy:#0E1927;
+  --grey:#666;--dark:#2E2723;--line:#E6DCCD;
+  --head:'Marcellus',Georgia,serif;--body:'Nunito Sans',Arial,sans-serif;--hand:'Caveat','Comic Sans MS',cursive;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#fff;color:var(--grey);font-family:var(--body);font-size:15.5px;line-height:1.75;letter-spacing:.2px;-webkit-font-smoothing:antialiased}
+html,body{overflow-x:clip}
+body{background:#fff;color:var(--grey);font-family:var(--body);font-size:15.5px;line-height:1.75;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-
-h1,h2,h3,h4{font-family:var(--head);font-weight:400;text-transform:uppercase;color:var(--red);line-height:1.18;letter-spacing:2px}
-h2{font-size:clamp(28px,3.6vw,40px)}
-.kick{display:inline-flex;align-items:center;gap:14px;font-family:var(--head);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-bottom:14px}
-.kick::after{content:"";width:60px;height:1px;background:var(--sand)}
-.center .kick::before{content:"";width:60px;height:1px;background:var(--sand)}
-
-.btn{display:inline-block;font-family:var(--head);font-size:13px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:12px 26px;border:1px solid var(--red);color:var(--red);background:transparent;transition:.25s}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{font-family:var(--head);font-weight:400;text-transform:uppercase;color:var(--red);line-height:1.12;letter-spacing:2px}
+h2{font-size:clamp(30px,3.8vw,46px)}
+.kick{display:inline-flex;align-items:center;gap:14px;font-family:var(--head);font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:#9A7E62;margin-bottom:16px}
+.kick::after{content:"";width:64px;height:1px;background:var(--sand)}
+.center{text-align:center}
+.center .kick::before{content:"";width:64px;height:1px;background:var(--sand)}
+.lead-up{text-transform:uppercase;font-weight:800;font-size:13.5px;letter-spacing:.8px;color:var(--dark);line-height:1.7}
+.btn{display:inline-block;font-family:var(--head);font-size:12.5px;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border:1px solid var(--red);color:var(--red);background:transparent;transition:.25s;cursor:pointer}
 .btn:hover{background:var(--red);color:#fff}
-.btn.full{background:var(--red);color:#fff}
-.btn.full:hover{background:var(--red2)}
-.btn.white{border-color:#fff;color:#fff}
-.btn.white:hover{background:#fff;color:var(--red)}
+.btn.full{background:var(--red);color:#fff}.btn.full:hover{background:var(--red2)}
+.btn.white{border-color:rgba(255,255,255,.85);color:#fff}.btn.white:hover{background:#fff;color:var(--red)}
 
-/* header */
-header.top{position:sticky;top:0;z-index:50;background:var(--red);color:#fff}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
-.logo{text-decoration:none;text-align:center;line-height:1.05;color:#fff}
-.logo small{display:block;font-family:var(--head);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;opacity:.85}
-.logo b{display:block;font-family:var(--head);font-weight:400;font-size:24px;letter-spacing:1px}
-nav.menu{display:flex;gap:26px}
-nav.menu a{text-decoration:none;font-family:var(--head);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;opacity:.9}
-nav.menu a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
-.top .pren{font-family:var(--head);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-left:1px solid rgba(255,255,255,.35);padding-left:22px}
-@media(max-width:900px){nav.menu{display:none}}
+/* ===== LOGO (posate + caps, come il loro) ===== */
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;line-height:1}
+.logo svg{height:44px;width:auto;flex:none}
+.logo .bar{width:1px;height:40px;background:currentColor;opacity:.55}
+.logo .txt b{display:block;font-family:var(--head);font-weight:400;font-size:17px;letter-spacing:1.5px;text-transform:uppercase}
+.logo .txt small{display:block;font-family:var(--head);font-size:8.5px;letter-spacing:2.2px;text-transform:uppercase;margin-top:5px;opacity:.85}
 
-/* foto slot */
+/* ===== HEADER ===== */
+header.top{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--red);color:#fff;transition:box-shadow .3s}
+header.top.sc{box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px;max-width:1280px}
+nav.menu{display:flex;gap:24px}
+nav.menu a{text-decoration:none;font-family:var(--head);font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;color:#fff;opacity:.92;position:relative;padding:4px 0}
+nav.menu a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--sand);transform:scaleX(0);transition:.25s}
+nav.menu a:hover::after{transform:scaleX(1)}
+.pren{font-family:var(--head);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;border-left:1px solid rgba(255,255,255,.35);padding:8px 0 8px 24px;white-space:nowrap}
+@media(max-width:980px){nav.menu{display:none}}
+@media(max-width:480px){.logo .txt b{font-size:15px}.pren{padding-left:14px;font-size:11px;letter-spacing:1.5px}}
+main{padding-top:78px}
+
+/* ===== FOTO ===== */
 .ph{position:relative;overflow:hidden;background:linear-gradient(160deg,#4a3a2e,#241a14)}
 .ph::after{content:attr(data-label);position:absolute;left:0;right:0;bottom:16px;text-align:center;font-family:var(--head);text-transform:uppercase;letter-spacing:2px;font-size:12px;color:rgba(255,255,255,.45)}
-.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform 1.2s ease}
+.zoom:hover img{transform:scale(1.05)}
 
-/* hero */
-.hero{position:relative;min-height:calc(92vh - 76px);display:grid;place-items:center;text-align:center;color:#fff}
-.hero .ph{position:absolute;inset:0}
-.hero .ph::after{display:none}
-.hero::before{content:"";position:absolute;inset:0;z-index:2;background:radial-gradient(rgba(75,64,64,.55),rgba(0,0,0,.55))}
-.hero-in{position:relative;z-index:3;padding:90px 24px}
-.hero h1{color:#fff;font-size:clamp(40px,7vw,80px);letter-spacing:3px}
-.hero .sub{font-family:var(--head);text-transform:uppercase;letter-spacing:3px;font-size:14px;color:var(--sand);margin-bottom:18px}
-.hero p{font-size:clamp(17px,2vw,21px);max-width:620px;margin:18px auto 34px;color:#fff}
-.hero .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* ===== HERO ===== */
+.hero{position:relative;height:calc(100vh - 78px);min-height:560px;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden}
+.hero .ph{position:absolute;inset:0}.hero .ph::after{display:none}
+.hero .ph img{transform:scale(1.06);animation:kb 18s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:2;background:radial-gradient(rgba(75,64,64,.5),rgba(0,0,0,.6))}
+.hero-in{position:relative;z-index:3;padding:40px 24px;max-width:900px}
+.hero .mark{display:inline-flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:22px}
+.hero .mark svg{height:64px}
+.hero .mark span{font-family:var(--head);font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--sand)}
+.hero h1{color:#fff;font-size:clamp(34px,5.6vw,66px);letter-spacing:3px}
+.hero p{font-size:clamp(16px,1.8vw,19px);max-width:560px;margin:18px auto 30px}
+.hero .rating{font-family:var(--head);letter-spacing:2.5px;font-size:13px;color:var(--sand);margin-top:26px}
+.hero .rating b{color:#fff;font-weight:400}
+.scroll{position:absolute;z-index:3;bottom:22px;left:50%;transform:translateX(-50%);width:1px;height:54px;background:linear-gradient(rgba(255,255,255,.8),transparent);animation:sd 2s infinite}
+@keyframes sd{0%{opacity:0;transform:translate(-50%,-10px)}50%{opacity:1}100%{opacity:0;transform:translate(-50%,10px)}}
 
-/* storia: foto + testo con blocco crema dietro */
-section{padding:100px 0;position:relative}
-.storia .grid{display:grid;grid-template-columns:420px 1fr;gap:70px;align-items:center;position:relative}
-.storia .grid::before{content:"";position:absolute;left:-200px;top:-60px;width:520px;height:340px;background:var(--cream);z-index:0}
-.storia .ph{aspect-ratio:4/5;z-index:1}
+/* ===== STORIA (blocco crema sfalsato) ===== */
+section{position:relative;padding:110px 0}
+.storia .grid{display:grid;grid-template-columns:430px 1fr;gap:80px;align-items:center;position:relative}
+.storia .block{position:absolute;left:calc(-1 * var(--gut));top:-110px;width:calc(var(--gut) + 330px);height:420px;background:var(--blush);z-index:0}
+.storia .ph{aspect-ratio:4/5;z-index:1;box-shadow:0 30px 60px rgba(46,39,35,.18)}
 .storia .txt{position:relative;z-index:1}
-.storia h2{margin-bottom:22px}
-.storia p.up{text-transform:uppercase;font-weight:700;font-size:13.5px;letter-spacing:.6px;color:var(--dark);margin-bottom:14px}
-.storia p{margin-bottom:14px}
-.storia .btn{margin-top:12px}
-@media(max-width:860px){.storia .grid{grid-template-columns:1fr;gap:40px}.storia .grid::before{left:-24px;width:70%}}
+.storia h2{margin-bottom:24px}
+.storia p{margin-bottom:16px}
+@media(max-width:900px){.storia .grid{grid-template-columns:1fr;gap:44px}.storia .block{width:85%;height:300px}}
 
-/* diagonale */
-.diag{height:120px;background:linear-gradient(160deg,#fff 50%,var(--cream) 50%)}
-.diag.rev{background:linear-gradient(160deg,var(--cream) 50%,#fff 50%)}
+/* ===== NUVOLETTA ROMANESCA ===== */
+.voce{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:end;margin-top:34px;max-width:560px}
+.voce .tw{width:92px;color:var(--dark)}
+.bubble{position:relative;border:2px solid var(--dark);border-radius:18px;padding:16px 20px;background:#fff;font-family:var(--hand);font-size:22px;line-height:1.25;color:var(--dark);transform:rotate(-1.2deg)}
+.bubble::before{content:"";position:absolute;left:-15px;bottom:22px;width:22px;height:22px;background:#fff;border-left:2px solid var(--dark);border-bottom:2px solid var(--dark);transform:skewY(30deg) rotate(10deg)}
+.bubble small{display:block;font-family:var(--body);font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:#9A7E62;margin-top:10px;font-weight:700}
 
-/* menu 25 */
-.m25{background:var(--cream);padding-top:40px}
-.center{text-align:center}
-.m25 .head{margin-bottom:56px}
-.m25 .grid{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:60px;align-items:start}
-@media(max-width:860px){.m25 .grid{grid-template-columns:1fr !important;gap:44px}}
-.video{position:relative;aspect-ratio:9/16;background:#fff;padding:12px;box-shadow:0 18px 40px rgba(106,13,0,.12)}
+/* ===== ORARI (foto che esce dal bordo) ===== */
+.orari{padding:0;background:linear-gradient(90deg,#fff 62%,var(--cream) 62%)}
+.orari .grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.orari .txt{padding:100px 70px 100px 0}
+.orari .ph{margin-right:calc(-1 * var(--gut));min-height:640px}
+.orari h2{margin-bottom:30px}
+.oc{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:28px}
+.oc h3{font-size:19px;letter-spacing:3px;margin-bottom:10px;color:var(--dark)}
+.oc p{font-size:14.5px;line-height:1.9}
+.oc p b{color:var(--dark);font-weight:700}
+.orari .note{font-size:14px;margin-bottom:12px}
+.orari .note b{color:var(--dark)}
+@media(max-width:900px){.orari{background:#fff}.orari .grid{grid-template-columns:1fr}.orari .txt{padding:80px 0 50px}.orari .ph{margin:0 -28px;min-height:380px}}
+
+/* ===== SCORPACCIATA + VIDEO ===== */
+.m25{background:var(--cream)}
+.m25 .head{margin-bottom:60px}
+.m25 .grid{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:70px;align-items:center}
+@media(max-width:900px){.m25 .grid{grid-template-columns:1fr;gap:50px}}
+.video{position:relative;aspect-ratio:9/16;background:#fff;padding:12px;box-shadow:0 24px 50px rgba(106,13,0,.16);transform:rotate(-1.5deg)}
 .video .ph{position:absolute;inset:12px}
 .video video{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);object-fit:cover;z-index:2}
 .video .play{position:absolute;inset:0;z-index:1;display:grid;place-items:center;text-align:center;color:#fff}
-.video .play i{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;border:1px solid rgba(255,255,255,.75);margin:0 auto 16px}
+.video .play i{display:grid;place-items:center;width:74px;height:74px;border-radius:50%;border:1px solid rgba(255,255,255,.75);margin:0 auto 16px}
 .video .play i svg{width:24px;margin-left:4px}
-.video .play b{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:2px;font-size:20px;display:block}
-.badge{position:absolute;z-index:3;top:-22px;right:-22px;width:96px;height:96px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--head)}
-.badge b{font-weight:400;font-size:32px;line-height:1;display:block}
-.badge small{font-size:9px;letter-spacing:2px;text-transform:uppercase}
-@media(max-width:860px){.badge{right:4px}}
+.video .play b{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:2px;font-size:19px;display:block}
+.stamp{position:absolute;z-index:3;top:-30px;right:-34px;width:118px;height:118px;border-radius:50%;background:var(--tomato);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--head);transform:rotate(12deg);box-shadow:0 10px 26px rgba(179,38,30,.4);outline:2px dashed rgba(255,255,255,.6);outline-offset:-8px}
+.stamp b{font-weight:400;font-size:38px;line-height:1;display:block}
+.stamp small{font-size:9px;letter-spacing:2px;text-transform:uppercase}
+@media(max-width:900px){.stamp{right:-6px}}
+.scorp h3{font-size:clamp(28px,3.2vw,38px);margin-bottom:6px}
+.scorp .sub{font-family:var(--head);text-transform:uppercase;letter-spacing:3px;font-size:13px;color:#9A7E62;margin-bottom:26px}
+.course{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--line)}
+.course:last-of-type{border-bottom:1px solid var(--line)}
+.course h4{font-size:13px;letter-spacing:3px;color:var(--red);padding-top:3px}
+.course p{color:var(--dark);font-size:15.5px;line-height:1.6}
+.scorp .price{display:flex;align-items:baseline;gap:16px;margin:26px 0 8px}
+.scorp .price b{font-family:var(--head);font-weight:400;font-size:52px;color:var(--red);line-height:1}
+.scorp .price span{font-size:13.5px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--dark)}
+.scorp .small{font-size:13.5px;margin-bottom:24px}
+@media(max-width:560px){.course{grid-template-columns:1fr;gap:4px}}
 
-.carta{background:#fff;padding:46px 50px}
-@media(max-width:560px){.carta{padding:34px 24px}}
-.carta h3{text-align:center;font-size:30px}
-.carta .sub{text-align:center;font-family:var(--head);text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--grey)}
-.course{margin-top:30px}
-.course h4{font-size:13px;letter-spacing:3px;color:#B08A5A;text-align:center;margin-bottom:10px}
-.dish{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);color:var(--dark);font-weight:600;font-size:16.5px}
-.dish .tag{margin-left:auto;font-family:var(--head);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);white-space:nowrap;font-weight:400}
-.carta .note{margin-top:28px;text-align:center;font-size:14px}
+/* ===== CAROSELLO PIATTI ===== */
+.piatti{background:var(--blush)}
+.piatti .head{margin-bottom:50px}
+.piatti .sub2{font-family:var(--head);font-size:21px;color:var(--dark);text-transform:none;letter-spacing:1px;margin-top:14px}
+.car{position:relative}
+.track{display:flex;gap:34px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 4px 10px}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 calc((100% - 68px)/3);scroll-snap-align:start}
+@media(max-width:900px){.slide{flex-basis:70%}}
+.slide .ph{aspect-ratio:1/1.08}
+.slide h3{font-family:var(--body);text-transform:none;letter-spacing:.2px;color:var(--dark);font-size:15.5px;font-weight:700;text-align:center;margin-top:16px}
+.slide p{text-align:center;font-size:14px;margin-top:2px;padding:0 10px}
+.slide .pr{display:block;text-align:center;font-family:var(--head);color:var(--red);letter-spacing:2px;margin-top:6px}
+.arr{position:absolute;top:38%;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid var(--red);background:var(--cream);color:var(--red);display:grid;place-items:center;cursor:pointer;transition:.2s}
+.arr:hover{background:var(--red);color:#fff}
+.arr.l{left:-22px}.arr.r{right:-22px}
+@media(max-width:700px){.arr{display:none}}
 
-/* piatti */
-.piatti .head{margin-bottom:56px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
-@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.cards{grid-template-columns:1fr}}
-.card .ph{aspect-ratio:1/1}
-.card h3{font-size:21px;margin-top:20px}
-.card p{margin-top:6px;font-size:15px}
+/* ===== CARTA (foto | linea | testo) ===== */
+.carta .grid{display:grid;grid-template-columns:1fr 1px 1fr;gap:60px;align-items:start}
+.carta .sep{background:var(--line);align-self:stretch}
+.carta figure .ph{aspect-ratio:4/5}
+.carta figcaption{text-align:center;font-size:13px;margin-top:12px;color:var(--dark)}
+.carta h2{margin-bottom:22px}
+.carta .list{margin:22px 0 26px}
+.dish{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);color:var(--dark);font-weight:700;font-size:15px}
+.dish small{font-weight:400;color:var(--grey)}
+.dish .pr{margin-left:auto;font-family:var(--head);font-size:15px;color:var(--red);font-weight:400;white-space:nowrap}
+.dish::before{content:"";flex:0 0 auto}
+@media(max-width:900px){.carta .grid{grid-template-columns:1fr;gap:40px}.carta .sep{display:none}}
 
-/* banda */
-.banda{background:var(--red);color:#fff;text-align:center;padding:84px 0}
-.banda h2{color:#fff}
-.banda p{max-width:600px;margin:16px auto 28px;color:#f2e2d5}
+/* ===== CANTINA (cornice sfalsata) ===== */
+.cantina{background:#fff}
+.cantina h2{margin-bottom:22px}
+.cantina .grid{display:grid;grid-template-columns:1fr 440px;gap:80px;align-items:center}
+.frame{position:relative;padding:26px}
+.frame::before{content:"";position:absolute;inset:0 26px 26px 0;border:1px solid var(--sand)}
+.frame .ph{aspect-ratio:4/5;position:relative;left:26px;top:0}
+.cantina .wines{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin:20px 0 28px}
+@media(max-width:900px){.cantina .grid{grid-template-columns:1fr;gap:30px}.frame{order:-1}}
 
-/* info */
-.info{background:linear-gradient(160deg,#fff 50%,var(--cream) 50%)}
-.info .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
-@media(max-width:860px){.info .grid{grid-template-columns:1fr;gap:52px}.info{background:#fff}}
-.info .box{background:#fff;padding:36px 28px;border:1px solid var(--line)}
-.info h3{font-size:22px;margin-bottom:16px}
-.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px;text-align:left;color:var(--dark)}
-.row.off{color:var(--grey)}
-.info .big{font-family:var(--head);font-size:21px;color:var(--dark);text-decoration:none;display:block;letter-spacing:1px}
-.info a.lk{font-family:var(--head);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red);text-decoration:none;display:inline-block;margin-top:12px}
-
-/* footer */
-footer{background:var(--navy);color:#B9C0CA;text-align:center;padding:56px 0 36px;font-size:14px}
-footer .logo{color:#fff;display:inline-block}
-footer .soc{display:flex;gap:24px;justify-content:center;margin:20px 0}
-footer .soc a{text-decoration:none;font-family:var(--head);letter-spacing:2px;text-transform:uppercase;font-size:12px;color:var(--sand)}
-footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
-
-/* barra mobile */
-.callbar{display:none}
-@media(max-width:700px){
-  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60}
-  .callbar a{flex:1;text-align:center;padding:15px 10px;font-family:var(--head);font-size:13px;letter-spacing:2px;text-transform:uppercase;text-decoration:none}
-  .callbar a:first-child{background:var(--red);color:#fff}
-  .callbar a:last-child{background:#1E7A4C;color:#fff}
-  footer{padding-bottom:86px}
-}
-
-
-.rating{font-family:var(--head);letter-spacing:2px;font-size:14px;color:var(--sand);margin-top:16px}
-.rating b{color:#fff;font-weight:400}
-.menus .head{margin-bottom:48px}
-.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:1000px){.mgrid{grid-template-columns:repeat(2,1fr)}}
+/* ===== MENU PDF ===== */
+.menus{background:var(--cream)}
+.menus .head{margin-bottom:50px}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.mgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.mgrid{grid-template-columns:1fr}}
-.mcard{all:unset;cursor:pointer;border-top:4px solid var(--mc,#B08A5A) !important;display:flex;flex-direction:column;gap:6px;padding:30px 22px;border:1px solid var(--line);background:#fff;text-align:center;transition:.25s}
-.mcard:hover,.mcard:focus-visible{border-color:var(--red);box-shadow:0 12px 30px rgba(106,13,0,.12);transform:translateY(-3px)}
-.mcard .mt{font-family:var(--head);text-transform:uppercase;letter-spacing:2px;color:var(--mc,var(--red));font-size:18px;line-height:1.25}
-.mcard .ms{font-size:14px;color:var(--grey)}
-.mcard .mo{margin-top:10px;font-family:var(--head);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--dark)}
-.modal{position:fixed;inset:0;z-index:100;background:rgba(14,25,39,.78);display:none;align-items:center;justify-content:center;padding:20px}
+.mcard{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:6px;padding:34px 24px 28px;background:#fff;text-align:center;transition:.25s;border-top:5px solid var(--mc,#B08A5A);position:relative}
+.mcard:hover,.mcard:focus-visible{box-shadow:0 16px 36px rgba(46,39,35,.14);transform:translateY(-4px)}
+.mcard .mt{font-family:var(--head);text-transform:uppercase;letter-spacing:2.5px;color:var(--mc,var(--red));font-size:19px;line-height:1.25}
+.mcard .ms{font-size:14px}
+.mcard .mo{margin-top:12px;font-family:var(--head);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--dark)}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(14,25,39,.8);display:none;align-items:center;justify-content:center;padding:20px}
 .modal.open{display:flex}
 .modal-box{background:#fff;width:min(900px,100%);height:min(92vh,1100px);display:flex;flex-direction:column}
 .modal-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--red);color:#fff;padding:12px 16px;font-family:var(--head);text-transform:uppercase;letter-spacing:2px;font-size:14px}
@@ -175,210 +197,247 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
 .modal-bar a{color:var(--sand);font-size:11px;text-decoration:none}
 .modal-bar button{all:unset;cursor:pointer;font-size:20px;line-height:1;padding:2px 6px}
 .modal iframe{flex:1;border:0;width:100%;background:#eee}
-.book{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:820px;margin:10px auto 0;text-align:left}
+
+/* ===== PRENOTA ===== */
+.prenota{background:var(--red);color:#fff;overflow:hidden}
+.prenota::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 60%,rgba(0,0,0,.14) 60%)}
+.prenota .wrap{position:relative}
+.prenota h2{color:#fff}
+.prenota .intro{max-width:620px;margin:16px auto 34px;color:#F2E2D5}
+.book{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:860px;margin:0 auto;text-align:left}
 @media(max-width:700px){.book{grid-template-columns:1fr 1fr}}
-.book label{display:flex;flex-direction:column;gap:6px;font-family:var(--head);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#f2e2d5}
+.book label{display:flex;flex-direction:column;gap:6px;font-family:var(--head);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#F2E2D5}
 .book .wide{grid-column:1/-1}
-.book input,.book select,.book textarea{font:inherit;font-family:var(--body);font-size:16px;letter-spacing:0;text-transform:none;padding:12px;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.08);color:#fff;border-radius:0}
+.book input,.book select,.book textarea{font-family:var(--body);font-size:16px;letter-spacing:0;text-transform:none;padding:12px;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.07);color:#fff;border-radius:0}
+.book input:focus,.book select:focus,.book textarea:focus{outline:none;border-color:var(--sand);background:rgba(255,255,255,.12)}
 .book select option{color:#333}
 .book input::-webkit-calendar-picker-indicator{filter:invert(1)}
-.book button{justify-self:center;cursor:pointer;margin-top:6px}
-.book .err{grid-column:1/-1;color:#ffd7c9;font-size:14px;min-height:0}
-.banda .alt{margin-top:22px;font-size:14px}
-.banda .alt a{color:#fff}
+.book button{justify-self:center;margin-top:8px}
+.book .err{grid-column:1/-1;color:#FFD7C9;font-size:14px}
+.prenota .alt{margin-top:22px;font-size:14px}
+.prenota .alt a{color:#fff}
 
-.rv{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}
+/* ===== DOVE ===== */
+.dove{background:linear-gradient(160deg,#fff 55%,var(--cream) 55%)}
+.dove .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
+@media(max-width:900px){.dove .grid{grid-template-columns:1fr}.dove{background:#fff}}
+.dove .box{background:#fff;padding:40px 28px;border:1px solid var(--line)}
+.dove h3{font-size:20px;margin-bottom:14px;letter-spacing:3px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px;text-align:left;color:var(--dark)}
+.row.off{color:var(--grey)}
+.dove .big{font-family:var(--head);font-size:20px;color:var(--dark);text-decoration:none;display:block;letter-spacing:1px}
+.dove a.lk{font-family:var(--head);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red);text-decoration:none;display:inline-block;margin-top:12px}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy);color:#B9C0CA;text-align:center;padding:64px 0 40px;font-size:14px}
+footer .logo{justify-content:center;color:#fff;margin-bottom:6px}
+footer .soc{display:flex;gap:26px;justify-content:center;margin:22px 0}
+footer .soc a{text-decoration:none;font-family:var(--head);letter-spacing:2px;text-transform:uppercase;font-size:12px;color:var(--sand)}
+footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
+
+.callbar{display:none}
+@media(max-width:700px){
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60}
+  .callbar a{flex:1;text-align:center;padding:15px 10px;font-family:var(--head);font-size:13px;letter-spacing:2px;text-transform:uppercase;text-decoration:none}
+  .callbar a:first-child{background:var(--red);color:#fff}
+  .callbar a:last-child{background:#1E7A4C;color:#fff}
+  footer{padding-bottom:90px}
+  section{padding:80px 0}
+}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero .ph img{animation:none;transform:none}.scroll{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
-<header class="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="posate" viewBox="0 0 40 100">
+    <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <ellipse cx="11" cy="16" rx="7" ry="11"/><path d="M11 27v62"/><circle cx="11" cy="92" r="2.4"/>
+      <path d="M24 6v18M29 6v18M34 6v18M24 24c0 5 10 5 10 0M29 28v61"/><circle cx="29" cy="92" r="2.4"/>
+    </g>
+  </symbol>
+  <symbol id="torre" viewBox="0 0 100 140">
+    <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M22 132V40h56v92"/><path d="M16 40h68l-4-10H20z"/>
+      <path d="M20 30v-14h10v8h10v-8h10v8h10v-8h10v8h10v14"/>
+      <path d="M42 132v-26a8 8 0 0 1 16 0v26"/><path d="M34 62h8v14h-8zM58 62h8v14h-8z"/>
+      <path d="M10 132h80"/><path d="M30 92l-4 4M70 92l4 4M40 50h20" opacity=".6"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="top" id="hdr">
   <div class="wrap">
-    <a class="logo" href="#top"><small>Sapori della tradizione</small><b>della Torre</b></a>
-    <nav class="menu">
-      <a href="#top">Home</a>
+    <a class="logo" href="#top" aria-label="Trattoria della Torre, home">
+      <svg viewBox="0 0 40 100" aria-hidden="true"><use href="#posate"/></svg>
+      <span class="bar"></span>
+      <span class="txt"><b>Trattoria<br>della Torre</b><small>Sapori della tradizione</small></span>
+    </a>
+    <nav class="menu" aria-label="Sezioni">
       <a href="#storia">La trattoria</a>
-      <a href="#menu">Scorpacciata</a>
+      <a href="#scorpacciata">Scorpacciata</a>
       <a href="#piatti">I piatti</a>
-      <a href="#menu-pdf">Menu</a>
-      <a href="#info">Contatti</a>
+      <a href="#menu">Menu</a>
+      <a href="#cantina">Cantina</a>
+      <a href="#dove">Contatti</a>
     </nav>
     <a class="pren" href="#prenota">Prenota un tavolo</a>
   </div>
 </header>
 
+<main>
+
 <section class="hero" id="top" style="padding:0">
-  <div class="ph">
-    <!-- FOTO HERO: sala o tavola apparecchiata (shooting cliente) -->
-    <img src="https://static.wixstatic.com/media/063410_cc7b414ee5f245299ea036b1af08977c~mv2.jpg/v1/fill/w_1800,h_1200,al_c,q_85,enc_auto/hero.jpg" alt="La sala della Trattoria della Torre" onerror="this.remove()">
-  </div>
+  <div class="ph"><img src="https://static.wixstatic.com/media/063410_cc7b414ee5f245299ea036b1af08977c~mv2.jpg/v1/fill/w_1920,h_1200,al_c,q_85,enc_auto/hero.jpg" alt="La sala della Trattoria della Torre" onerror="this.remove()"></div>
   <div class="hero-in">
-    <div class="sub">Sapori della tradizione · Isola Sacra, Fiumicino</div>
-    <h1>Trattoria della Torre</h1>
-    <div class="rating">★★★★★ <b>4,6</b> su Google · 270 recensioni</div>
-    <p>La cucina romana di casa, come la fai la domenica. Solo che qui è aperto pure il martedì sera.</p>
-    <div class="btns">
-      <a class="btn full" href="#prenota" style="border-color:#fff">Prenota un tavolo</a>
-      <a class="btn white" href="#menu">Scorpacciata Romana · 25 €</a>
-    </div>
+    <div class="mark"><svg viewBox="0 0 40 100" aria-hidden="true" style="color:#fff"><use href="#posate"/></svg><span>Isola Sacra · Fiumicino</span></div>
+    <h1>Il sapore della tradizione romana, a due passi dal mare</h1>
+    <p>Carbonara, amatriciana, la brace e la pinsa. Cucina di casa, porzioni da domenica.</p>
+    <a class="btn white" href="#prenota">Prenota un tavolo</a>
+    <div class="rating">★★★★★ &nbsp;<b>4,6</b> su Google · 270 recensioni</div>
   </div>
+  <span class="scroll" aria-hidden="true"></span>
 </section>
 
 <section class="storia" id="storia">
   <div class="wrap">
     <div class="grid">
-      <div class="ph rv" data-label="Foto del locale"><img src="https://static.wixstatic.com/media/063410_5d952d197e3f47a0bd165407d3da6c0c~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_auto/sala.jpg" alt="Trattoria della Torre" onerror="this.remove()"></div>
-      <div class="txt rv">
+      <span class="block" aria-hidden="true"></span>
+      <div class="ph zoom rv" data-label="Foto del locale"><img src="https://static.wixstatic.com/media/063410_5d952d197e3f47a0bd165407d3da6c0c~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_auto/sala.jpg" alt="Trattoria della Torre" onerror="this.remove()"></div>
+      <div class="txt rv d1">
         <span class="kick">Trattoria della Torre</span>
-        <h2>Se magna come a casa.<br>Cucina romana, a due passi dal mare</h2>
-        <p class="up">Una trattoria vera, a due passi dal mare di Fiumicino.</p>
-        <p>Il tagliere per cominciare, la pasta fatta come si deve, la brace che decide i tempi. I classici romani che conosci, più qualche piatto di mare, perché il mare qui è dietro l'angolo.</p>
-        <p>Qui non si corre. Ci si siede, si ordina un'altra cosa da dividere, e ci si alza quando è ora. Non prima.</p>
-        <a class="btn" href="#menu">Scopri il menu</a>
+        <h2>Qui non si mangia di fretta.<br>Se magna come a casa</h2>
+        <p class="lead-up">Cucina tradizionale, cacciagione e prodotti fatti in casa, in via della Torre Alessandrina, a Isola Sacra.</p>
+        <p>Il tagliere per cominciare, la pasta fresca tirata come si deve, la brace che decide i tempi. I classici romani che conosci, e il mare di Fiumicino dietro l'angolo per chi vuole il pesce.</p>
+        <div class="voce">
+          <svg class="tw" viewBox="0 0 100 140" aria-hidden="true"><use href="#torre"/></svg>
+          <div class="bubble">Ma dove te pensi de stà?<br>Amore, gentilezza e simpatia, è la nostra filosofia. Gira pagina e comincia a magnà!<small>Dal nostro menù</small></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="diag"></div>
+<section class="orari" id="orari">
+  <div class="wrap">
+    <div class="grid">
+      <div class="txt rv">
+        <h2>Orari di apertura</h2>
+        <div class="oc">
+          <div><h3>Pranzo</h3><p><b>Sabato</b> 12:00–15:30<br><b>Domenica</b> 12:00–16:00<br>Mar – Ven: chiuso</p></div>
+          <div><h3>Cena</h3><p><b>Martedì – Venerdì</b> 19:00–23:00<br><b>Sabato</b> 19:00–23:30<br><b>Domenica</b> 19:00–23:00</p></div>
+        </div>
+        <p class="note"><b>Lunedì riposo.</b> Anche da asporto.</p>
+        <p class="note"><b>Prenotazioni:</b> dal sito o al 342 838 4188. Il venerdì e il weekend la sala si riempie presto.</p>
+        <p class="note"><b>Gruppi ed eventi:</b> compleanni, cene aziendali, ricorrenze. Abbiamo un menù dedicato, chiedeteci.</p>
+        <a class="btn" href="#prenota" style="margin-top:14px">Prenota un tavolo</a>
+      </div>
+      <div class="ph rv d1" data-label="La sala"><img src="https://static.wixstatic.com/media/063410_cc7b414ee5f245299ea036b1af08977c~mv2.jpg/v1/fill/w_1200,h_1300,al_c,q_85,enc_auto/sala2.jpg" alt="La sala della trattoria" onerror="this.remove()"></div>
+    </div>
+  </div>
+</section>
 
-<section class="m25" id="menu">
+<section class="m25" id="scorpacciata">
   <div class="wrap">
     <div class="head center rv">
-      <span class="kick">Il menu</span>
-      <h2>La Scorpacciata Romana a 25 €</h2>
+      <span class="kick">Il menu fisso</span>
+      <h2>La Scorpacciata Romana</h2>
     </div>
     <div class="grid">
       <div class="video rv">
-        <div class="badge"><div><b>25€</b><small>il menu</small></div></div>
+        <div class="stamp"><div><b>25€</b><small>a persona</small></div></div>
         <div class="ph"></div>
-        <!-- VIDEO PROMO: sostituire con <video src="promo.mp4" poster="promo.jpg" autoplay muted loop playsinline></video> dopo le riprese del 2–8 novembre -->
+        <!-- VIDEO PROMO: sostituire con <video src="promo.mp4" poster="promo.jpg" autoplay muted loop playsinline></video> dopo le riprese -->
         <div class="play"><div><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></i><b>Guarda la Scorpacciata</b></div></div>
       </div>
-
-      <div class="carta rv">
-        <h3>Scorpacciata Romana</h3>
-        <p class="sub">Menu fisso · 25 € a persona</p>
-        <div class="course">
-          <h4>Antipasto</h4>
-          <div class="dish">Tris di bruschette</div>
-          <div class="dish">Trippa alla romana</div>
-          <div class="dish">Fagioli con le cotiche</div>
-          <div class="dish">Tris di fritti romani</div>
-          <div class="dish">Tagliere misto di salumi e formaggi</div>
-        </div>
-        <div class="course">
-          <h4>Primo</h4>
-          <div class="dish">Paccheri ripieni di mortadella su letto di stracciatella e pistacchio</div>
-          <div class="dish">Tris di primi della cucina romana</div>
-        </div>
-        <div class="course">
-          <h4>Secondo e contorno</h4>
-          <div class="dish">Polpette della Mamma</div>
-        </div>
-        <div class="course">
-          <h4>Dolce</h4>
-          <div class="dish">Tiramisù</div>
-        </div>
-        <p class="note"><b style="color:var(--red)">25 € a persona, bevande escluse.</b><br>Il menu si intende per l'intero tavolo.</p>
-        <div style="text-align:center;margin-top:22px"><a class="btn full" href="#prenota" data-menu-pick="Scorpacciata Romana">Prenota la Scorpacciata</a></div>
+      <div class="scorp rv d1">
+        <h3>Quattro portate, un prezzo</h3>
+        <p class="sub">Per chi a tavola non si vuole fermare</p>
+        <div class="course"><h4>Antipasto</h4><p>Tris di bruschette · Trippa alla romana · Fagioli con le cotiche · Tris di fritti romani · Tagliere misto di salumi e formaggi</p></div>
+        <div class="course"><h4>Primo</h4><p>Paccheri ripieni di mortadella su letto di stracciatella e pistacchio · Tris di primi della cucina romana</p></div>
+        <div class="course"><h4>Secondo</h4><p>Polpette della Mamma, con contorno</p></div>
+        <div class="course"><h4>Dolce</h4><p>Tiramisù</p></div>
+        <div class="price"><b>25 €</b><span>a persona · bevande escluse</span></div>
+        <p class="small">Il menu si intende a persona e per l'intero tavolo.</p>
+        <a class="btn full" href="#prenota" data-menu-pick="Scorpacciata Romana">Prenota la Scorpacciata</a>
       </div>
     </div>
   </div>
 </section>
 
-<div class="diag rev"></div>
-
-<section class="piatti" id="piatti" style="padding-top:40px">
+<section class="piatti" id="piatti">
   <div class="wrap">
     <div class="head center rv">
-      <span class="kick">Da non perdere</span>
+      <span class="kick">Dalla nostra cucina</span>
       <h2>I piatti della Torre</h2>
+      <p class="sub2">Quelli che la gente torna a chiedere</p>
     </div>
-    <div class="cards">
-      <article class="card rv">
-        <div class="ph" data-label="Tagliere della Torre"><img src="https://static.wixstatic.com/media/063410_ed59baa20c424a3c94b9f9e836436076~mv2.jpeg/v1/fill/w_900,h_900,al_c,q_85,enc_auto/tagliere.jpeg" alt="Il Tagliere della Torre" onerror="this.remove()"></div>
-        <h3>Tagliere della Torre</h3>
-        <p>Affettati, formaggi, sfizi dello chef, coccetti caldi e bruschette. Per due, da dividere. Più o meno.</p>
-      </article>
-      <article class="card rv">
-        <div class="ph" data-label="Carbonara"><img src="https://static.wixstatic.com/media/063410_3b2db292ce7b466683ddb55f19c74dbd~mv2.jpg/v1/fill/w_900,h_900,al_c,q_85,enc_auto/primi.jpg" alt="La carbonara della Trattoria della Torre" onerror="this.remove()"></div>
-        <h3>Carbonara e amatriciana</h3>
-        <p>Rigatoni alla carbonara e bucatini all'amatriciana, col guanciale di Norcia e il pecorino romano. A Roma non si discutono.</p>
-      </article>
-      <article class="card rv">
-        <div class="ph" data-label="Tonnarello cacio, pepe e cozze"></div>
-        <h3>Tonnarello cacio, pepe e cozze</h3>
-        <p>Il cacio e pepe incontra il mare di Fiumicino. Il piatto che non ti aspetti.</p>
-      </article>
-      <article class="card rv">
-        <div class="ph" data-label="Spaghetti alle vongole"></div>
-        <h3>Spaghetti alle vongole</h3>
-        <p>Quelli che ordini quando sei vicino al mare e non ci vuoi pensare troppo.</p>
-      </article>
-      <article class="card rv">
-        <div class="ph" data-label="Grigliata mista"><img src="https://static.wixstatic.com/media/063410_3961f850865f48e49656a7affdc055a4~mv2.jpg/v1/fill/w_900,h_900,al_c,q_85,enc_auto/secondi.jpg" alt="La grigliata della Trattoria della Torre" onerror="this.remove()"></div>
-        <h3>Grigliata, filetto e galletto</h3>
-        <p>Arrosticini, salsiccia, pollo, spuntatura, pancetta e spiedino. Poi filetto al pepe verde e galletto alla griglia.</p>
-      </article>
-      <article class="card rv">
-        <div class="ph" data-label="Pinsa della Torre"></div>
-        <h3>Pinsa della Torre</h3>
-        <p>Mozzarella, patate, guanciale e provola. Quella che porta il nome di casa.</p>
-      </article>
+    <div class="car rv">
+      <button class="arr l" aria-label="Piatti precedenti" data-dir="-1"><svg width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div class="track" id="track">
+        <article class="slide"><div class="ph zoom" data-label="Tagliere della Torre"><img src="https://static.wixstatic.com/media/063410_ed59baa20c424a3c94b9f9e836436076~mv2.jpeg/v1/fill/w_800,h_860,al_c,q_85,enc_auto/tagliere.jpeg" alt="Il Tagliere della Torre" onerror="this.remove()"></div><h3>Tagliere della Torre</h3><p>Affettati, formaggi, sfizi dello chef, coccetti caldi e bruschette, per due</p><span class="pr">30 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Rigatoni alla carbonara"><img src="https://static.wixstatic.com/media/063410_3b2db292ce7b466683ddb55f19c74dbd~mv2.jpg/v1/fill/w_800,h_860,al_c,q_85,enc_auto/primi.jpg" alt="Rigatoni alla carbonara" onerror="this.remove()"></div><h3>Rigatoni alla carbonara</h3><p>Uova fresche, guanciale di Norcia e pecorino romano</p><span class="pr">13 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Bucatini all'amatriciana"></div><h3>Bucatini all'amatriciana</h3><p>Sugo di guanciale di Norcia e pecorino romano</p><span class="pr">13 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Tonnarello cacio, pepe e cozze"></div><h3>Tonnarello cacio, pepe e cozze</h3><p>Il cacio e pepe incontra il mare di Fiumicino</p></article>
+        <article class="slide"><div class="ph zoom" data-label="Grigliata mista"><img src="https://static.wixstatic.com/media/063410_3961f850865f48e49656a7affdc055a4~mv2.jpg/v1/fill/w_800,h_860,al_c,q_85,enc_auto/secondi.jpg" alt="Grigliata mista" onerror="this.remove()"></div><h3>Grigliata mista</h3><p>Arrosticini, salsiccia, pollo, spuntatura, pancetta e spiedino</p><span class="pr">19 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Filetto al pepe verde"></div><h3>Filetto al pepe verde</h3><p>Manzo magro con crema di panna, senape e pepe verde</p><span class="pr">22 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Spaghetti alle vongole"></div><h3>Spaghetti alle vongole</h3><p>Dal nostro menù di mare</p><span class="pr">17 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Maracaibo"></div><h3>Maracaibo</h3><p>Il secondo di mare della casa</p><span class="pr">20 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Pinsa della Torre"></div><h3>Pinsa della Torre</h3><p>Mozzarella, patate, guanciale e provola</p><span class="pr">15 €</span></article>
+        <article class="slide"><div class="ph zoom" data-label="Galletto alla griglia"></div><h3>Galletto alla griglia</h3><p>Intero, sulla griglia, aromatizzato al rosmarino</p><span class="pr">15 €</span></article>
+      </div>
+      <button class="arr r" aria-label="Piatti successivi" data-dir="1"><svg width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
   </div>
 </section>
 
-<section class="m25" id="carta" style="padding-top:90px">
+<section class="carta" id="carta">
   <div class="wrap">
-    <div class="head center rv">
-      <span class="kick">Alla carta</span>
-      <h2>La carta e la cantina</h2>
-    </div>
-    <div class="grid" style="grid-template-columns:1fr 1fr">
-      <div class="carta rv">
-        <h3>La carta</h3>
-        <p class="sub">I piatti della casa</p>
-        <div class="course"><h4>Per cominciare</h4><div class="dish">Tagliere della Torre <small style="font-weight:400">(per 2)</small><span class="tag">30 €</span></div></div>
-        <div class="course"><h4>Primi</h4>
-          <div class="dish">Rigatoni alla carbonara<span class="tag">13 €</span></div><div class="dish">Bucatini all'amatriciana<span class="tag">13 €</span></div>
-          <div class="dish">Tonnarelli cacio e pepe<span class="tag">13 €</span></div><div class="dish">Tonnarello cacio, pepe e cozze</div><div class="dish">Spaghetti alle vongole<span class="tag">17 €</span></div></div>
-        <div class="course"><h4>Secondi</h4>
-          <div class="dish">Grigliata mista<span class="tag">19 €</span></div><div class="dish">Filetto al pepe verde<span class="tag">22 €</span></div><div class="dish">Galletto alla griglia<span class="tag">15 €</span></div><div class="dish">Maracaibo <small style="font-weight:400">(di mare)</small><span class="tag">20 €</span></div></div>
-        <div class="course"><h4>Pinsa</h4><div class="dish">Pinsa Della Torre <small style="font-weight:400">· mozzarella, patate, guanciale, provola</small><span class="tag">15 €</span></div></div>
-        <p class="note">Il menu completo è qui sotto, in "Tutti i nostri menu".<br>Allergie o intolleranze? Dillo a noi, ci pensiamo noi.</p>
-      </div>
-      <div class="carta rv">
-        <h3>La cantina</h3>
-        <p class="sub">Vino della casa e bottiglie</p>
-        <div class="course"><h4>Vino della casa</h4>
-          <div class="dish">Rosso o bianco · ¼ lt<span class="tag">3 €</span></div>
-          <div class="dish">Rosso o bianco · ½ lt<span class="tag">5 €</span></div>
-          <div class="dish">Rosso o bianco · 1 lt<span class="tag">8 €</span></div>
-          <div class="dish">Romanella rossa o bianca<span class="tag">8 €</span></div></div>
-        <div class="course"><h4>Bollicine</h4>
-          <div class="dish">Spumante · Prosecco<span class="tag">8 €</span></div>
-          <div class="dish">Falanghina<span class="tag">13 €</span></div>
-          <div class="dish">Cuvée Berlucchi<span class="tag">30 €</span></div>
-          <div class="dish">Champagne Veuve Clicquot<span class="tag">60 €</span></div></div>
-        <div class="course"><h4>Bianchi e rosè</h4>
-          <div class="dish">Passerina · Pecorino · Chardonnay<span class="tag">13 €</span></div>
-          <div class="dish">Vermentino · Turà Tre Venezie<span class="tag">12 €</span></div>
-          <div class="dish">Cerasuolo d'Abruzzo<span class="tag">13 €</span></div></div>
-        <div class="course"><h4>Rossi</h4>
-          <div class="dish">Montepulciano d'Abruzzo<span class="tag">13 €</span></div>
-          <div class="dish">Chianti · Shiraz · Cesanese del Piglio · Cabernet<span class="tag">14 €</span></div>
-          <div class="dish">Aglianico · Negroamaro<span class="tag">15 €</span></div>
-          <div class="dish">Amarone<span class="tag">30 €</span></div></div>
+    <div class="grid">
+      <figure class="rv"><div class="ph zoom" data-label="La pinsa romana"><img src="https://static.wixstatic.com/media/063410_5d952d197e3f47a0bd165407d3da6c0c~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_auto/pinsa.jpg" alt="La pinsa della Trattoria della Torre" onerror="this.remove()"></div><figcaption>La pinsa romana della casa</figcaption></figure>
+      <span class="sep" aria-hidden="true"></span>
+      <div class="rv d1">
+        <span class="kick">La cucina</span>
+        <h2>Tradizione romana in ogni piatto</h2>
+        <p class="lead-up">Pasta fresca fatta in casa, guanciale di Norcia, pecorino romano e la brace accesa ogni sera.</p>
+        <div class="list">
+          <div class="dish">Tagliere della Torre <small>· per due</small><span class="pr">30 €</span></div>
+          <div class="dish">Tonnarelli cacio e pepe<span class="pr">13 €</span></div>
+          <div class="dish">Fettuccine al ragù<span class="pr">14 €</span></div>
+          <div class="dish">Gnocchi alla sorrentina<span class="pr">15 €</span></div>
+          <div class="dish">Costata fiorentina <small>· min. 400 g</small><span class="pr">5 € / hg</span></div>
+          <div class="dish">Pinse bianche e rosse<span class="pr">da 9 €</span></div>
+        </div>
+        <a class="btn" href="#menu">Sfoglia tutti i menu</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="menus" id="menu-pdf">
+<section class="cantina" id="cantina" style="padding-top:20px">
+  <div class="wrap">
+    <div class="grid">
+      <div class="rv">
+        <span class="kick">La mia cantina</span>
+        <h2>Il vino giusto,<br>senza giri di parole</h2>
+        <p>Il vino della casa rosso o bianco, la Romanella, e una carta di bottiglie italiane scelte per stare bene con la cucina romana: dal Cesanese del Piglio all'Amarone.</p>
+        <div class="wines">
+          <div class="dish">Casa ¼ lt<span class="pr">3 €</span></div>
+          <div class="dish">Casa 1 lt<span class="pr">8 €</span></div>
+          <div class="dish">Cesanese del Piglio<span class="pr">14 €</span></div>
+          <div class="dish">Montepulciano d'Abruzzo<span class="pr">13 €</span></div>
+        </div>
+        <button class="btn" data-pdf="menu/cantina.pdf" data-title="La cantina">Apri la carta dei vini</button>
+      </div>
+      <div class="frame rv d1"><div class="ph zoom" data-label="La cantina"><img src="https://static.wixstatic.com/media/063410_cc7b414ee5f245299ea036b1af08977c~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_auto/cantina.jpg" alt="La cantina della Trattoria della Torre" onerror="this.remove()"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="menus" id="menu">
   <div class="wrap">
     <div class="head center rv">
       <span class="kick">Sfoglia</span>
@@ -395,17 +454,11 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
   </div>
 </section>
 
-<div class="modal" id="pdfModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
-  <div class="modal-box">
-    <div class="modal-bar"><span id="pdfTitle">Menu</span><div><a id="pdfOpen" href="#" target="_blank" rel="noopener">Schermo intero</a><button id="pdfClose" aria-label="Chiudi">✕</button></div></div>
-    <iframe id="pdfFrame" title="Menu PDF"></iframe>
-  </div>
-</div>
-
-<section class="banda" id="prenota">
+<section class="prenota center" id="prenota">
   <div class="wrap rv">
-    <h2>Prenota il tuo tavolo</h2>
-    <p>Compila e invia: la richiesta ci arriva subito su WhatsApp e ti confermiamo noi. Venerdì e weekend si riempie presto.</p>
+    <span class="kick" style="color:var(--sand)">Prenotazioni</span>
+    <h2>Il tavolo ve lo teniamo noi</h2>
+    <p class="intro">Compila e invia: la richiesta ci arriva subito su WhatsApp e ti confermiamo noi.</p>
     <form id="bookForm" class="book" novalidate>
       <label>Nome<input name="nome" required autocomplete="name"></label>
       <label>Telefono<input name="tel" type="tel" required autocomplete="tel"></label>
@@ -421,7 +474,7 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
   </div>
 </section>
 
-<section class="info" id="info">
+<section class="dove" id="dove">
   <div class="wrap">
     <div class="grid">
       <div class="box rv">
@@ -430,16 +483,15 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
         <div class="row"><span>Mar – Ven</span><span>19:00–23:00</span></div>
         <div class="row"><span>Sabato</span><span>12:00–15:30 · 19:00–23:30</span></div>
         <div class="row"><span>Domenica</span><span>12:00–16:00 · 19:00–23:00</span></div>
-        <p style="margin-top:12px;font-size:14px">Anche da asporto.</p>
       </div>
-      <div class="box rv">
+      <div class="box rv d1">
         <h3>Dove siamo</h3>
         <span class="big">Via della Torre Alessandrina 77A</span>
         <p>Isola Sacra · Fiumicino (RM)</p>
-        <a class="lk" href="https://maps.google.com/?q=Via+della+Torre+Alessandrina+77A+Fiumicino" target="_blank" rel="noopener">Apri in Google Maps →</a>
+        <a class="lk" href="https://maps.google.com/?q=Trattoria+della+Torre+Via+della+Torre+Alessandrina+77A+Fiumicino" target="_blank" rel="noopener">Apri in Google Maps →</a>
       </div>
-      <div class="box rv">
-        <h3>Prenotazioni</h3>
+      <div class="box rv d2">
+        <h3>Contatti</h3>
         <a class="big" href="tel:+393428384188">342 838 4188</a>
         <p>trattoriadellatorre1@gmail.com</p>
         <a class="lk" href="https://wa.me/393428384188" target="_blank" rel="noopener">Scrivici su WhatsApp →</a>
@@ -448,21 +500,30 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
   </div>
 </section>
 
+</main>
+
+<div class="modal" id="pdfModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
+  <div class="modal-box">
+    <div class="modal-bar"><span id="pdfTitle">Menu</span><div><a id="pdfOpen" href="#" target="_blank" rel="noopener">Schermo intero</a><button id="pdfClose" aria-label="Chiudi">✕</button></div></div>
+    <iframe id="pdfFrame" title="Menu PDF"></iframe>
+  </div>
+</div>
+
 <footer>
   <div class="wrap">
-    <div class="logo"><small>Sapori della tradizione</small><b>della Torre</b></div>
+    <a class="logo" href="#top"><svg viewBox="0 0 40 100" aria-hidden="true"><use href="#posate"/></svg><span class="bar"></span><span class="txt" style="text-align:left"><b>Trattoria<br>della Torre</b><small>Sapori della tradizione</small></span></a>
     <div class="soc">
       <a href="https://www.instagram.com/_trattoriadellatorre_" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/profile.php?id=100088566847745" target="_blank" rel="noopener">Facebook</a>
     </div>
-    <p>Via della Torre Alessandrina 77A · Isola Sacra, Fiumicino (RM) · 342 838 4188</p>
+    <p>Trattoria della Torre di Roberta Contaldo · Via della Torre Alessandrina 77A · Isola Sacra, Fiumicino (RM) · 342 838 4188</p>
     <p class="cred">© 2026 Trattoria della Torre · Sito realizzato da FVL Media</p>
   </div>
 </footer>
 
 <div class="callbar">
   <a href="tel:+393428384188">Chiama</a>
-  <a href="https://wa.me/393428384188" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="#prenota">Prenota</a>
 </div>
 
 <script>
@@ -512,6 +573,13 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
       (F.note.value.trim()?'%0A• Note: '+encodeURIComponent(F.note.value.trim()):'');
     window.location.href='https://wa.me/393428384188?text='+msg;
   });
+})();
+</script>
+<script>
+(function(){
+  var h=document.getElementById('hdr');addEventListener('scroll',function(){h.classList.toggle('sc',scrollY>10)},{passive:true});
+  var t=document.getElementById('track');
+  document.querySelectorAll('.arr').forEach(function(b){b.addEventListener('click',function(){var s=t.querySelector('.slide');t.scrollBy({left:(+b.dataset.dir)*(s.offsetWidth+34),behavior:'smooth'});});});
 })();
 </script>
 </body>
