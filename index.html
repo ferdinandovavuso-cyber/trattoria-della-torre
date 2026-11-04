@@ -442,6 +442,78 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
         </div>
         <button class="btn" data-pdf="menu/cantina.pdf" data-title="La cantina">Apri la carta dei vini</button>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="menus" id="menu">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="kick">Sfoglia</span>
+      <h2>Tutti i nostri menu</h2>
+    </div>
+    <div class="mgrid">
+      <button class="mcard rv" style="--mc:#6A0D00" data-pdf="menu/menu-carta.pdf" data-title="Menù alla carta"><span class="mt">Menù alla carta</span><span class="ms">Antipasti, primi, secondi, dolci</span><span class="mo">Apri il menu →</span></button>
+      <button class="mcard rv" style="--mc:#B3261E" data-pdf="menu/scorpacciata-romana.pdf" data-title="Scorpacciata Romana"><span class="mt">Scorpacciata Romana</span><span class="ms">Menu fisso · 25 €</span><span class="mo">Apri il menu →</span></button>
+      <button class="mcard rv" style="--mc:#1F3A5F" data-pdf="menu/menu-mare.pdf" data-title="Menù di mare"><span class="mt">Menù di mare</span><span class="ms">Dal mare di Fiumicino</span><span class="mo">Apri il menu →</span></button>
+      <button class="mcard rv" style="--mc:#4F5D2F" data-pdf="menu/menu-pinse.pdf" data-title="Le pinse"><span class="mt">Le pinse</span><span class="ms">Bianche e rosse</span><span class="mo">Apri il menu →</span></button>
+      <button class="mcard rv" style="--mc:#4A1A35" data-pdf="menu/cantina.pdf" data-title="La cantina"><span class="mt">La cantina</span><span class="ms">Vini e bollicine</span><span class="mo">Apri il menu →</span></button>
+      <button class="mcard rv" data-pdf="https://static.wixstatic.com/ugd/063410_c9ed97a2f6d1435fa99c281f243cab43.pdf" data-title="Menù per eventi"><span class="mt">Menù per eventi</span><span class="ms">Compleanni, gruppi, cerimonie</span><span class="mo">Apri il menu →</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="prenota center" id="prenota">
+  <div class="wrap rv">
+    <span class="kick" style="color:var(--sand)">Prenotazioni</span>
+    <h2>Il tavolo ve lo teniamo noi</h2>
+    <p class="intro">Compila e invia: la richiesta ci arriva subito su WhatsApp e ti confermiamo noi.</p>
+    <form id="bookForm" class="book" novalidate>
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Telefono<input name="tel" type="tel" required autocomplete="tel"></label>
+      <label>Giorno<input name="data" type="date" required></label>
+      <label>Orario<select name="ora" required></select></label>
+      <label>Persone<select name="persone" required></select></label>
+      <label>Menu<select name="menu"><option>Alla carta</option><option>Scorpacciata Romana</option><option>Menù di pesce</option><option>Menù pinsa</option><option>Evento / gruppo</option></select></label>
+      <label class="wide">Note (allergie, seggiolone, compleanno…)<textarea name="note" rows="2"></textarea></label>
+      <p class="err" id="bookErr" role="alert"></p>
+      <button class="btn white wide" type="submit">Invia la prenotazione</button>
+    </form>
+    <p class="alt">Preferisci a voce? Chiama il <a href="tel:+393428384188">342 838 4188</a></p>
+  </div>
+</section>
+
+<section class="dove" id="dove">
+  <div class="wrap">
+    <div class="grid">
+      <div class="box rv">
+        <h3>Orari</h3>
+        <div class="row off"><span>Lunedì</span><span>Chiuso</span></div>
+        <div class="row"><span>Mar – Ven</span><span>19:00–23:00</span></div>
+        <div class="row"><span>Sabato</span><span>12:00–15:30 · 19:00–23:30</span></div>
+        <div class="row"><span>Domenica</span><span>12:00–16:00 · 19:00–23:00</span></div>
+      </div>
+      <div class="box rv d1">
+        <h3>Dove siamo</h3>
+        <span class="big">Via della Torre Alessandrina 77A</span>
+        <p>Isola Sacra · Fiumicino (RM)</p>
+        <a class="lk" href="https://maps.google.com/?q=Trattoria+della+Torre+Via+della+Torre+Alessandrina+77A+Fiumicino" target="_blank" rel="noopener">Apri in Google Maps →</a>
+      </div>
+      <div class="box rv d2">
+        <h3>Contatti</h3>
+        <a class="big" href="tel:+393428384188">342 838 4188</a>
+        <p>trattoriadellatorre1@gmail.com</p>
+        <a class="lk" href="https://wa.me/393428384188" target="_blank" rel="noopener">Scrivici su WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="modal" id="pdfModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
+  <div class="modal-box">
+    <div class="modal-bar"><span id="pdfTitle">Menu</span><div><a id="pdfOpen" href="#" target="_blank" rel="noopener">Schermo intero</a><button id="pdfClose" aria-label="Chiudi">✕</button></div></div>
     <iframe id="pdfFrame" title="Menu PDF"></iframe>
   </div>
 </div>
