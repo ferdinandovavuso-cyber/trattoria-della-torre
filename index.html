@@ -367,14 +367,14 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
       </div>
       <div class="scorp rv d1">
         <h3>Quattro portate, un prezzo</h3>
-        <p class="sub">Per chi a tavola non si vuole fermare</p>
-        <div class="course"><h4>Antipasto</h4><p>Tris di bruschette · Trippa alla romana · Fagioli con le cotiche · Tris di fritti romani · Tagliere misto di salumi e formaggi</p></div>
-        <div class="course"><h4>Primo</h4><p>Paccheri ripieni di mortadella su letto di stracciatella e pistacchio · Tris di primi della cucina romana</p></div>
-        <div class="course"><h4>Secondo</h4><p>Polpette della Mamma, con contorno</p></div>
+        <p class="sub">Dal martedì al venerdì</p>
+        <div class="course"><h4>Antipasto</h4><p>Tris di bruschette · Trippa alla romana · Fagioli con le cotiche · Tris di fritti romani · Tagliere misto di salumi e formaggi · Paccheri ripieni di mortadella su letto di stracciatella e pistacchio</p></div>
+        <div class="course"><h4>Primo</h4><p>Tris di primi della cucina romana</p></div>
+        <div class="course"><h4>Secondo</h4><p>Polpette della Mamma</p></div>
         <div class="course"><h4>Dolce</h4><p>Tiramisù</p></div>
         <div class="price"><b>25 €</b><span>a persona · bevande escluse</span></div>
-        <p class="small">Il menu si intende a persona e per l'intero tavolo.</p>
-        <a class="btn full" href="#prenota" data-menu-pick="Scorpacciata Romana">Prenota la Scorpacciata</a>
+        <p class="small">Disponibile dal martedì al venerdì. Il menu si intende a persona e per l'intero tavolo.</p>
+        <a class="btn full" href="#prenota" data-menu-pick="Scorpacciata Romana (mar–ven)">Prenota la Scorpacciata</a>
       </div>
     </div>
   </div>
@@ -393,7 +393,7 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
         <article class="slide"><h3>Tagliere della Torre</h3><p>Affettati, formaggi, sfizi dello chef, coccetti caldi e bruschette, per due</p><span class="pr">30 €</span></article>
         <article class="slide"><h3>Rigatoni alla carbonara</h3><p>Uova fresche, guanciale di Norcia e pecorino romano</p><span class="pr">13 €</span></article>
         <article class="slide"><h3>Bucatini all'amatriciana</h3><p>Sugo di guanciale di Norcia e pecorino romano</p><span class="pr">13 €</span></article>
-        <article class="slide"><h3>Tonnarello cacio, pepe e cozze</h3><p>Il cacio e pepe incontra il mare di Fiumicino</p></article>
+        <article class="slide"><h3>Tonnarello cacio, pepe e cozze</h3><p>Il cacio e pepe incontra il mare di Fiumicino</p><span class="pr">16 €</span></article>
         <article class="slide"><h3>Grigliata mista</h3><p>Arrosticini, salsiccia, pollo, spuntatura, pancetta e spiedino</p><span class="pr">19 €</span></article>
         <article class="slide"><h3>Filetto al pepe verde</h3><p>Manzo magro con crema di panna, senape e pepe verde</p><span class="pr">22 €</span></article>
         <article class="slide"><h3>Spaghetti alle vongole</h3><p>Dal nostro menù di mare</p><span class="pr">17 €</span></article>
@@ -458,7 +458,6 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
       <button class="mcard rv" style="--mc:#1F3A5F" data-pdf="menu/menu-mare.pdf" data-title="Menù di mare"><span class="mt">Menù di mare</span><span class="ms">Dal mare di Fiumicino</span><span class="mo">Apri il menu →</span></button>
       <button class="mcard rv" style="--mc:#4F5D2F" data-pdf="menu/menu-pinse.pdf" data-title="Le pinse"><span class="mt">Le pinse</span><span class="ms">Bianche e rosse</span><span class="mo">Apri il menu →</span></button>
       <button class="mcard rv" style="--mc:#4A1A35" data-pdf="menu/cantina.pdf" data-title="La cantina"><span class="mt">La cantina</span><span class="ms">Vini e bollicine</span><span class="mo">Apri il menu →</span></button>
-      <button class="mcard rv" data-pdf="https://static.wixstatic.com/ugd/063410_c9ed97a2f6d1435fa99c281f243cab43.pdf" data-title="Menù per eventi"><span class="mt">Menù per eventi</span><span class="ms">Compleanni, gruppi, cerimonie</span><span class="mo">Apri il menu →</span></button>
     </div>
   </div>
 </section>
@@ -474,7 +473,7 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
       <label>Giorno<input name="data" type="date" required></label>
       <label>Orario<select name="ora" required></select></label>
       <label>Persone<select name="persone" required></select></label>
-      <label>Menu<select name="menu"><option>Alla carta</option><option>Scorpacciata Romana</option><option>Menù di pesce</option><option>Menù pinsa</option><option>Evento / gruppo</option></select></label>
+      <label>Menu<select name="menu"><option>Alla carta</option><option>Scorpacciata Romana (mar–ven)</option><option>Menù di pesce</option><option>Menù pinsa</option><option>Evento / gruppo</option></select></label>
       <label class="wide">Note (allergie, seggiolone, compleanno…)<textarea name="note" rows="2"></textarea></label>
       <p class="err" id="bookErr" role="alert"></p>
       <button class="btn white wide" type="submit">Invia la prenotazione</button>
@@ -573,6 +572,7 @@ footer .cred{margin-top:22px;font-size:12px;color:#6F7A88}
   F.addEventListener('submit',function(e){
     e.preventDefault();err.textContent='';
     if(!F.nome.value.trim()||!F.tel.value.trim()||!d.value||!ore.value){err.textContent='Mancano nome, telefono, giorno o orario.';return;}
+    var wd=new Date(d.value+'T12:00').getDay();if(/Scorpacciata/.test(F.menu.value)&&(wd===0||wd===6)){err.textContent='La Scorpacciata Romana è disponibile dal martedì al venerdì: scegli un altro giorno o un altro menu.';return;}
     var gg=new Date(d.value+'T12:00').toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'});
     var msg='Ciao! Vorrei prenotare alla Trattoria della Torre:%0A'+
       '• '+encodeURIComponent(gg)+' alle '+ore.value+'%0A'+
