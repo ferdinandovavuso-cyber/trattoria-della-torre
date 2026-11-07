@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/_files/:path*", "destination": "/#menu", "permanent": true },
-    { "source": "/:path((?!menu/|index).+)", "destination": "/", "permanent": true }
+    { "source": "/:path((?!menu/|index|robots\\.txt|sitemap\\.xml|favicon).+)", "destination": "/", "permanent": true }
   ],
   "headers": [
     { "source": "/menu/(.*)\\.pdf", "headers": [ { "key": "Content-Type", "value": "application/pdf" }, { "key": "Cache-Control", "value": "public, max-age=3600" } ] }
