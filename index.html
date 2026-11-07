@@ -114,7 +114,8 @@ section{position:relative;padding:110px 0}
 .orari-art{margin-right:calc(-1 * var(--gut));min-height:640px;background:var(--red);color:var(--sand);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;text-align:center;padding:60px 30px}
 .orari-art{position:relative;overflow:hidden;justify-content:flex-end !important;padding:0 !important}
 .orari-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.orari-art .cap{position:relative;z-index:1;width:100%;padding:40px 30px;background:linear-gradient(transparent,rgba(40,8,0,.85));display:flex;flex-direction:column;align-items:center;gap:16px}
+.orari-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,8,0,0) 25%,rgba(40,8,0,.55) 60%,rgba(40,8,0,.92) 100%)}
+.orari-art .cap{position:relative;z-index:1;width:100%;padding:60px 30px 46px;background:none;text-shadow:0 2px 12px rgba(0,0,0,.5);display:flex;flex-direction:column;align-items:center;gap:16px}
 .orari-art p{font-family:var(--head);text-transform:uppercase;letter-spacing:3px;font-size:14px;line-height:1.9;color:#fff}
 .orari h2{margin-bottom:30px}
 .oc{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:28px}
